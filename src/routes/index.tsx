@@ -4,11 +4,12 @@ import { createStackNavigator } from '@react-navigation/stack';
 import Home from '../screens/Home';
 import ScanQRCode from '../screens/ScanQRCode';
 
-type RootStackParamList = {
+type StackParamList = {
   Home: undefined;
+  ScanQRCode: undefined;
 };
 
-const Stack = createStackNavigator();
+const Stack = createStackNavigator<StackParamList>();
 
 const Routes: React.FC = () => {
   return (
